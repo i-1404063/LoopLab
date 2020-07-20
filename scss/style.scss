@@ -1,0 +1,75 @@
+$bg-color: #333;
+$font-color: #fff;
+$primary-color: #008ed6;
+$icon-size: 30px;
+body {
+    background-color: $bg-color;
+    color: $font-color;
+}
+
+.navbar {
+    border-bottom: 3px solid $primary-color;
+    background: #292b2c;
+    opacity: .7;
+}
+
+#home-section {
+    background: url(../image/home.jpg) no-repeat center top;
+    background-size: cover;
+    min-height: 700px;
+    background-attachment: fixed;
+    .dark-overlay {
+        background: rgba(0, 0, 0, 0.7);
+        min-height: 700px;
+    }
+    .fa {
+        background: $font-color;
+        color: $primary-color;
+        padding: 4px;
+        font-size: $icon-size;
+        border-radius: 5px;
+    }
+    .card-form {
+        opacity: .8;
+    }
+    .home-inner {
+        padding-top: 150px;
+        padding-bottom: 50px;
+    }
+}
+
+#explore-main-section {
+    .fa {
+        background: $bg-color;
+        font-size: $icon-size;
+        border-radius: 3px;
+        padding: 3px;
+        color: $font-color;
+    }
+}
+
+#create-main-section {
+    .fa {
+        background: $font-color;
+        padding: 4px;
+        border-radius: 5px;
+        color: $primary-color;
+        font-size: $icon-size;
+    }
+}
+
+#share-main-section {
+    .fa {
+        background: $bg-color;
+        font-size: $icon-size;
+        border-radius: 3px;
+        padding: 3px;
+        color: $font-color;
+    }
+}
+
+@media(max-width: 767px) {
+    #home-section h1 {
+        font-size: 36px;
+    }
+}
